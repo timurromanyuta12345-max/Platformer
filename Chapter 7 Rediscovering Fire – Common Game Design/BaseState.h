@@ -4,10 +4,11 @@
 
 // Абстрактный базовый класс для всех экранов игры
 class BaseState {
-private:
-	friend class StateManager;
+public:
 	enum class Flags : uint8_t { Transparent, Transcendent, Count };
 	enum class StateType : uint8_t { Intro = 1, MainMenu, Game, Paused, GameOver, Credits, Count };
+private:
+	friend class StateManager;
 protected:
 	StateManager* m_stateManager;
 	std::bitset<static_cast<size_t>(Flags::Count)> m_flags;
