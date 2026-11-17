@@ -1,0 +1,8 @@
+Name Enemy_knight
+Spritesheet EnemySheet.cfg
+Hitpoints 5
+BoundingBox 16 46
+DamageBox -8 -46 16 46
+Speed 1024 128
+JumpVelocity 250
+MaxVelocity 200 1024
